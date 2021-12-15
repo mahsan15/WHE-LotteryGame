@@ -2,22 +2,15 @@
         <header>
             <div class="container1">
                     <div>
-                        <h2>Numbers</h2>
-                        <p *ngFor="let num of numbers">
-                            <button (click)="selectNum(num)">
-                            
-                            Number : {{num}}
+                        <h2>Select </h2>
+                        <p *ngFor="let num of numbers; let i index">
+                            <button (click)="selectNum(num)"
+                            [ngClass]="{'green' : !pressed[i-1], 'red' : pressed[i-1]}">
+                            {{num}}
                         </button>
                         </p>
                     </div>
 
-                    <div>
-                        <h2>Numbers selected</h2>
-                        <p *ngFor="let num of selectedNums; let i index">
-                            Selected Number:{{num}}
-                        </p>
-                    </div>
-
-                    <button (click)="clear()">Clear</button>
+                    
             </div>
         </header>

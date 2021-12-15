@@ -1,0 +1,39 @@
+h2 {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 80px;
+  text-align: center;
+}
+
+button {
+  color: black;
+  display: block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  margin: 0 10px 10px 0;
+  text-transform: uppercase;
+  font-family: "Arial";
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+  /*#3e3e3e;*/
+  background: lightgray; /*#7cb289;*/
+  border: 5px solid black;
+  border-radius: 60px;
+  border-right: 10px solid black;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  float: left;
+}
+button:hover {
+  background-color: seagreen;
+}
+.container3 {
+  background-color: #eeb501;
+  border-radius: 40px;
+}

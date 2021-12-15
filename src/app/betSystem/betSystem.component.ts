@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-betSystem',
@@ -7,16 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BetSystemComponent implements OnInit {
 
+  
 
-
-  bet:number=0;
+  @Output() newBet = new EventEmitter<number>();
 
   addBet = (i:number) =>{
-    this.bet += i;
+    
+    this.newBet.emit(i);
   }
-  constructor() { }
+  constructor() { 
+
+  }
 
   ngOnInit(): void {
   }
+
+  
 
 }

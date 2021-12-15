@@ -1,0 +1,94 @@
+h1 {
+  font-family: "Arial";
+  font-weight: 900;
+  font-size: 80px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+p {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+button {
+  color: black;
+  display: block;
+  width: 180px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10px;
+  margin: 0 10px 10px 0;
+  padding: 10px 21px;
+  text-transform: uppercase;
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  /*#3e3e3e;*/
+  background: lightgray; /*#7cb289;*/
+  border-bottom: 10px solid #440f01;
+  border-right: 10px solid #440f01;
+  border-radius: 30px;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  float: left;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #440f01;
+  padding: 2rem 0;
+}
+
+button:hover {
+  background-color: slategrey;
+}
+.result {
+  background-color: #f3c70d;
+  border: 10px solid #440f01;
+  border-radius: 50px;
+  margin-inline: auto;
+  width: min((75%, 70.5rem));
+}
+
+.result2 {
+  background-color: #eeb501;
+  border: 10px solid #e9ad03;
+  border-radius: 50px;
+  margin-inline: auto;
+  width: min((75%, 70.5rem));
+}
+
+@media (min-width: 40em) {
+  main {
+    flex-direction: row;
+  }
+  main > * {
+    flex-basis: 100%;
+  }
+}
+.numberSelection {
+  background-color: #eeb501;
+  border: 10px solid #440f01;
+  border-radius: 50px;
+  margin-inline: auto;
+  width: min((75%, 70.5rem));
+}
+.betSystem {
+  background-image: url("https://img2.goodfon.com/original/1920x1080/9/e4/dengi-dollary-zheltyy-fon.jpg");
+  border: 10px solid #440f01;
+  border-radius: 50px;
+  margin-inline: auto;
+  width: min((75%, 70.5rem));
+}

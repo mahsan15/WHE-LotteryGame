@@ -1,0 +1,29 @@
+h2 {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+}
+
+.result {
+  background-color: #f3c70d;
+  border: 10px solid #440f01;
+  border-radius: 40px;
+  margin-inline: auto;
+  width: min((75%, 70.5rem));
+}
+
+.result2 {
+  background-color: #eeb501;
+  border: 10px solid #e9ad03;
+  border-radius: 40px;
+  margin-inline: auto;
+  width: min((75%, 70.5rem));
+}
+
+p {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}

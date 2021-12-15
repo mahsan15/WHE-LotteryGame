@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-numSelection',
@@ -9,29 +9,27 @@ export class NumSelectionComponent implements OnInit {
 
 
   numbers:number[]=[];
-  selectedNums:number[]=[];
+  selectedNums:number=0;
   pressed:boolean[]=[]
   sel:number=0;
-
-  constructor() { 
-
-
-  }
+  @Output() numArr = new EventEmitter<number>();
 
 
-  clear = () =>{
+  clearPressed (){
     for(var i=0;i<20;i++)
-  {
-    this.pressed.push(false);
-  }
-  this.selectedNums = [];
+  { this.pressed[i] = false; }
+  this.selectedNums = 0;
   }
 
   selectNum = (i:number) =>{
-    if(this.selectedNums.length < 5 && this.pressed[i-1] === false){
+    if(this.selectedNums < 5 && this.pressed[i-1] === false){
         this.pressed[i-1] = true;
-        this.selectedNums.push(i);
+        this.selectedNums++;
+        this.numArr.emit(i);
     }
+    
+    
+
   }
 
   
