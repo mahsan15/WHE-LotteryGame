@@ -1,5 +1,8 @@
 # WHELotteryGame
 
+This is a Lottery Game that generates a ticket, the user is given to select 5 numbers between 1-20 and there can not be duplicates. 
+Bet needs to be placed and Less than 5 numbers will not generate a ticket for you. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
 
 ## Development server
